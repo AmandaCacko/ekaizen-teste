@@ -4,8 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pertin - Home</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-    
+    <nav id="nav-bar">
+        <div id="logo-nav-bar">
+            <img src="./src/img/logo.png" alt="Logo" id="logo"/>
+            <a href="index.html">Pertin</a>
+        </div>
+        <ul id="nav-list" class="nav-dropdown">
+            <li><a href="#header-text">Inicio</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#seguranca">Segurança</a></li>
+            <li><a href="#comentarios">Comentários</a></li>
+        </ul>
+        <button><a href="./opiniao.html" class="opiniao-button">Deixe sua opinião</a></button>
+    </nav>
+    <header>
+        <div id="header-text">
+            <h1>Descubra Profissionais Locais com <span>Pertin</span></h1>
+            <p>Encontre os melhores serviços perto de você de maneira rápida e fácil.</p>
+            <div id="header-buttons">
+                <button class="button-img" id="app-store-button" onclick="openInNewTab('https://www.apple.com/br/app-store/')">
+                    <img src="./src/img/app-store.png" alt="Botão para ir ao app na App Store">
+                </button>
+                <button class="button-img" id="google-play-button" onclick="openInNewTab('https://play.google.com/store/')">
+                    <img src="./src/img/google-play.png" alt="Botão para ir ao app na Google Play">
+                </button>
+                </div>
+        </div>
+        <img src="./src/img/inicio.png" alt="" id="inicio-img">
+    </header>
+    <main>
+        <section id="como-funciona">
+            <h2>Como funciona?</h2>
+            <p class="sub-title">Antes de começar, entendemos que encontrar o serviço certo é essencial. Veja como o Pertin simplifica esse processo para você:</p>
+            <div id="white-card">
+                <div class="white-card" id="card-localizacao">
+                    <h3>1. Digite sua localização</h3>
+                    <img src="./src/img/localizacao-icone.png" alt="Ícone de pin">
+                    <p class="card-text">Insira sua localização para encontrar serviços próximos.</p>
+                </div>
+                <div class="white-card" id="card-categoria">
+                    <h3>2. Escolha a Categoria:</h3>
+                    <img src="./src/img/selecao-icone.png" alt="Ícone de seleção">
+                    <p class="card-text">Explore categorias para encontrar o serviço desejado.</p>
+                </div>
+                <div class="white-card" id="card-profissionais">
+                    <h3>3. Conheça os Profissionais:</h3>
+                    <img src="./src/img/pessoa-icone.png" alt="Ícone de pessoa">
+                    <p class="card-text">Visualize perfis e avaliações de profissionais.</p>
+                </div>
+                <div class="white-card" id="card-agendamento">
+                    <h3>4. Agende com Facilidade:</h3>
+                    <img src="./src/img/agendamento-icone.png" alt="Ícone de agendamento">
+                    <p class="card-text">Marque serviços de forma rápida e simples.</p>
+                </div>
+            </div>
+        </section>
+        <section id="servicos">
+            <h2>Alguns dos nossos serviços</h2>
+            <table>
+                <tr id="table-header">
+                    <th>Categoria</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>Jardinagem</td>
+                    <td>Manutenção de jardins e paisagismo.</td>
+                </tr>
+                <tr>
+                    <td>Encanamento</td>
+                    <td>Reparos e instalações hidráulicas residenciais.</td>
+                </tr>
+                <tr>
+                    <td>Elétrica</td>
+                    <td>Serviços elétricos, instalações e reparos.</td>
+                </tr>
+                <tr>
+                    <td>Pequenos Reparos</td>
+                    <td>Reparos e instalações hidráulicas residenciais.</td>
+                </tr>
+                <tr>
+                    <td>Limpeza Residencial</td>
+                    <td>Faxina geral, organização de ambientes.</td>
+                </tr>
+                <tr>
+                    <td>Serviço de Costura</td>
+                    <td>Confecção de roupas, ajustes e reparos em tecido.</td>
+                </tr>
+                <tr>
+                    <td>Comida Caseira</td>
+                    <td>Entrega de refeições caseiras, cardápio variado.</td>
+                </tr>
+                <tr>
+                    <td>Lanches Especiais</td>
+                    <td>Lanches e petiscos preparados localmente.</td>
+                </tr>
+                <tr>
+                    <td>Doces Artesanais</td>
+                    <td>Sobremesas e doces feitos à mão.</td>
+                </tr>
+            </table>
+        </section>
+        <section id="seguranca">
+            <h2>Segurança</h2>
+            <p class="sub-title">Mantenha-se tranquilo ao utilizar o Pertin. Nós priorizamos a segurança dos usuários e profissionais em cada interação. Nossos protocolos de segurança incluem:</p>
+            <div id="purple-cards">
+                <div id="left-purple-cards">
+                    <div class="purple-card" id="card-verificacao">
+                        <h3>1. Verificação de Profissionais</h3>
+                        <p class="card-text">Todos os profissionais são cuidadosamente verificados para garantir credenciais e experiência.</p>
+                    </div>
+                    <div class="purple-card" id="card-pagamento">
+                        <h3>2. Pagamento Seguro:</h3>
+                        <p class="card-text">Realize pagamentos de maneira segura e sem preocupações através do nosso sistema de pagamento integrado.</p>
+                    </div>
+                </div>
+                <img src="./src/img/seguranca.png" alt="">
+                <div id="right-purple-cards">
+                    <div class="purple-card" id="card-avaliacao">
+                        <h3>3. Avaliações Transparentes:</h3>
+                        <p class="card-text">Leia avaliações detalhadas de outros usuários para tomar decisões informadas.</p>
+                    </div>
+                    <div class="purple-card" id="card-suporte">
+                        <h3>4. Suporte 24/7:</h3>
+                        <p class="card-text">Nossa equipe de suporte está disponível a qualquer momento para ajudar com quaisquer dúvidas ou preocupações.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="comentarios">
+            <h2 class="title">Comentários</h2>
+            <p class="sub-title">A opinião de nossos usuários é valiosa. Veja o que estão dizendo sobre a experiência com o Pertin:</p>
+            <div id="carousel-buttons">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/andre-sampaio.png" alt="">
+                                    <p class="carousel-text">“O Pertin revolucionou minha abordagem profissional. Conectar-me a clientes tem sido uma experiência incrível. Agradeço pela oportunidade!”</p>
+                                    <p class="carousel-name">Andre Sampaio</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/joana-dias.png" alt="">
+                                    <p class="carousel-text">“Como costureira no Pertin, as pessoas me encontram para um projeto especial. A plataforma me ajuda a expandir meu negócio de costura.”</p>
+                                    <p class="carousel-name">Joana Dias</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/sabrina-correia.png" alt="">
+                                    <p class="carousel-text">“Como técnico de informática, o Pertin me conecta a clientes. A plataforma é uma ferramenta valiosa para expandir minha base de clientes.”</p>
+                                    <p class="carousel-name">Sabrina Correia</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/aparecida-silva.png" alt="">
+                                    <p class="carousel-text">“Como cozinheira, agradeço à Pertin pela oportunidade de compartilhar minha paixão pela comida caseira. A plataforma abre portas para profissionais como eu.”</p>
+                                    <p class="carousel-name">Aparecida Silva</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/josé-pereira.png" alt="">
+                                    <p class="carousel-text">“Como jardineiro no Pertin, recebo solicitações de clientes. A plataforma é eficaz, conectando profissionais a clientes de maneira eficiente.”</p>
+                                    <p class="carousel-name">José Pereira</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/carlos-almeida.png" alt="">
+                                    <p class="carousel-text">“O Pertin é minha principal fonte para encontrar profissionais confiáveis. Encontrei uma doceria incrível para um evento especial.”</p>
+                                    <p class="carousel-name">Carlos Almeida</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/carla-oliveira.png" alt="">
+                                    <p class="carousel-text">“Sou eletricista cadastrado no Pertin e só tenho elogios! A plataforma me conecta a clientes de forma eficiente, e a equipe de suporte é muito prestativa.”</p>
+                                    <p class="carousel-name">Carla Oliveira</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/juliana-viveira.png" alt="">
+                                    <p class="carousel-text">“O Pertin é meu go-to para serviços domésticos. Contratei uma excelente profissional de limpeza graças a esta plataforma.”</p>
+                                    <p class="carousel-name">Juliana Viveira</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/beatriz-costa.png" alt="">
+                                    <p class="carousel-text">“Estou sempre recomendando o Pertin! Encontrei um técnico de informática altamente competente que resolveu meu problema rapidamente.”</p>
+                                    <p class="carousel-name">Beatriz Costa</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/maria-silva.png" alt="">
+                                    <p class="carousel-text">“O Pertin realmente facilitou minha vida! Encontrei um eletricista incrível em minutos. O serviço foi rápido e eficiente. Recomendo!”</p>
+                                    <p class="carousel-name">Maria Silva</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/rafaela-martins.png" alt="">
+                                    <p class="carousel-text">“Encontrei uma profissional de limpeza excepcional no Pertin. Minha casa nunca esteve tão impecável. Estou muito feliz com o serviço”</p>
+                                    <p class="carousel-name">Rafaela Martins</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-item">
+                                    <img src="./src/img/joao-santos.png" alt="">
+                                    <p class="carousel-text">“Encontrei um cabeleireiro maravilhoso graças ao Pertin. Agora sempre utilizo o app para encontrar os melhores profissionais.”</p>
+                                    <p class="carousel-name">João Santos</p>
+                                </div>
+                            </div>
+                            <!-- Adicione mais slides conforme necessário -->
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>Pertin - Sua conexão com Profissionais Locais</p>
+        <p><i>Copyright © 2023 Pertin. Todos os direitos reservados.</i></p>
+        <p>Desenvolvido por Amanda Almeida Cacko</p>
+    </footer>
+    <script defer src="./src/components/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

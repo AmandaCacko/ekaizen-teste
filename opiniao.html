@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertin - Opinião</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <div id="logo-nav-bar">
+            <img src="./src/img/logo.png" alt="Logo" id="logo"/>
+            <a href="index.html">Pertin</a>
+        </div>
+        <ul id="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#como-funciona">Como funciona</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#seguranca">Segurança</a></li>
+            <li><a href="index.html#comentarios">Comentários</a></li>
+        </ul>
+        <button id="opiniao-button">Deixe sua opinião</button>
+    </nav>
+    <header>
+        <div id="header-text">
+            <h1>Sua <span>Opinião</span> é Essencial para nós</h1>
+            <p id="opiniao-text">Sua opinião é a bússola que nos guia na busca constante pela excelência, moldando o Pertin para proporcionar a melhor experiência possível na conexão entre clientes e profissionais locais.</p>
+            <div id="button-form-container">
+                <div class="button-form" id="button-form" onclick="openForm()">PREENCHER FORMULÁRIO</div>
+            </div>
+        </div>
+        <img src="./src/img/opiniao.png" alt="" id="inicio-img">
+    </header>
+
+    <footer>
+        <p>Pertin - Sua conexão com Profissionais Locais</p>
+        <p><i>Copyright © 2023 Pertin. Todos os direitos reservados.</i></p>
+        <p>Desenvolvido por Amanda Almeida Cacko</p>
+    </footer>
+    <form id="opiniao-form">
+        <div id="overlay" class="overlay">
+            <div id="form-card" class="form-card">
+                <button id="close-form">&times;</button>
+                <h2>Formulário</h2>
+                    <div id="form-container">
+                    <div class="label-input">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="tipo">Tipo:</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="profissional">Profissional</option>
+                                <option value="cliente">Cliente</option>
+                            </select>
+                        </div>
+                        <div class="label-input-star">
+                            <label for="nota">Nota:</label>
+                            <div class="rating" id="rating">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                        <input type="hidden" id="nota" name="nota" required>
+                        </div>
+                    </div>
+                    <div class="label-input">
+                        <label for="comentarios">Comentários (opcional):</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+                    </div>
+                <button class="button-form" id="submit-form-button" type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+    <script src="./src/components/opiniao.js"></script>
+</body>
+</html>
